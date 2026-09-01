@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AEGIS Pricing — Autonomous Execution OS</title>
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@5.0.16/500.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/space-grotesk@5.0.16/700.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.0.18/400.css" rel="stylesheet">
+<style>
+:root{--bg:#060913;--panel:#0d1322;--border:#1c2540;--text:#e6edf7;--muted:#8b96b3;--cyan:#22d3ee;--teal:#06e6c5;--green:#10e0a0;--purple:#a78bfa;--mono:'JetBrains Mono',monospace;--disp:'Space Grotesk',system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:var(--disp);background:var(--bg);color:var(--text);min-height:100vh;line-height:1.5}
+.wrap{max-width:1100px;margin:0 auto;padding:48px 24px}
+.brand{display:flex;align-items:center;gap:12px;margin-bottom:48px}
+.brand-mark{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,#0e2a3a,#101a33);border:1px solid var(--border);display:grid;place-items:center}
+.brand b{font-size:16px;letter-spacing:.12em}.brand b span{color:var(--cyan)}
+h1{font-size:36px;font-weight:700;margin-bottom:12px;letter-spacing:-.02em}
+.sub{color:var(--muted);font-family:var(--mono);font-size:13px;margin-bottom:48px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.card{background:linear-gradient(180deg,var(--panel),#0a1120);border:1px solid var(--border);border-radius:16px;padding:28px 24px;position:relative;transition:.25s}
+.card:hover{border-color:rgba(34,211,238,.4);transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.4)}
+.card.featured{border-color:var(--cyan);box-shadow:0 0 30px rgba(34,211,238,.15)}
+.card.featured::before{content:'MOST POPULAR';position:absolute;top:-10px;left:50%;transform:translateX(-50%);font-family:var(--mono);font-size:9px;letter-spacing:.14em;background:var(--cyan);color:#060913;padding:4px 12px;border-radius:99px;font-weight:700}
+.tier{font-family:var(--mono);font-size:11px;letter-spacing:.16em;color:var(--muted);text-transform:uppercase;margin-bottom:8px}
+.price{font-size:42px;font-weight:700;letter-spacing:-.03em;margin-bottom:4px}
+.price small{font-size:16px;color:var(--muted);font-weight:500}
+.billing{font-family:var(--mono);font-size:11px;color:var(--muted);margin-bottom:20px}
+.features{list-style:none;margin-bottom:28px}
+.features li{font-size:13px;color:var(--muted);padding:6px 0;display:flex;gap:8px;align-items:flex-start}
+.features li::before{content:'✓';color:var(--green);font-weight:700;flex:none}
+.btns{display:flex;flex-direction:column;gap:10px}
+.btn{display:block;text-align:center;padding:12px 16px;border-radius:10px;font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.06em;text-decoration:none;transition:.2s;cursor:pointer;border:1px solid transparent}
+.btn-primary{background:var(--cyan);color:#060913}.btn-primary:hover{background:#67e8f9}
+.btn-secondary{background:transparent;border-color:var(--border);color:var(--text)}.btn-secondary:hover{border-color:var(--cyan);color:var(--cyan)}
+.btn-teal{background:var(--teal);color:#060913}.btn-teal:hover{background:#5eead4}
+.btn-purple{background:var(--purple);color:#060913}.btn-purple:hover{background:#c4b5fd}
+.note{margin-top:40px;text-align:center;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.note a{color:var(--cyan)}
+.gateway{font-family:var(--mono);font-size:9px;letter-spacing:.1em;color:var(--muted);margin-top:6px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <div class="brand-mark">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 2L4 6v6c0 5 3.4 8.6 8 10 4.6-1.4 8-5 8-10V6l-8-4z" stroke="#22d3ee" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 12.5l2.5 2.5L16 9.5" stroke="#06e6c5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <b>AEGIS<span> // </span>PRICING</b>
+  </div>
+  <h1>Choose your autonomy level</h1>
+  <p class="sub">Deterministic risk envelope · Multi-agent cognitive core · Human-auditable execution</p>
+  <div class="grid">
+    <div class="card">
+      <div class="tier">Scout</div>
+      <div class="price">$49<small>/mo</small></div>
+      <div class="billing">or $470/yr · 7-day free trial</div>
+      <ul class="features">
+        <li>Live KPI telemetry & equity curves</li>
+        <li>Risk Command Center (VaR/CVaR/Kelly)</li>
+        <li>Agent mesh + Chain-of-Thought</li>
+        <li>Paper trading & audit trail</li>
+        <li>Drift detection & retrain status</li>
+      </ul>
+      <div class="btns">
+        <a class="btn btn-primary" href="https://whop.com/checkout/plan_RT4s0O2OC3Iel" target="_blank">Whop — Start Trial</a>
+        <a class="btn btn-secondary" href="https://buy.stripe.com/test_6oU8wP98N2xd5MQ7pUbjW01" target="_blank">Stripe Checkout</a>
+        <a class="btn btn-secondary" href="https://whop.com/checkout/plan_tXNN01VlR3pEx" target="_blank">Annual $470 (Whop)</a>
+      </div>
+      <div class="gateway">WHOP · STRIPE</div>
+    </div>
+    <div class="card featured">
+      <div class="tier">Commander</div>
+      <div class="price">$149<small>/mo</small></div>
+      <div class="billing">or $1,430/yr · 7-day free trial</div>
+      <ul class="features">
+        <li>Everything in Scout</li>
+        <li>Autonomy mode + SafeRL controls</li>
+        <li>Priority agent mesh</li>
+        <li>Custom Kelly / VaR thresholds</li>
+        <li>Blue/Green deployment visibility</li>
+        <li>Priority support channel</li>
+      </ul>
+      <div class="btns">
+        <a class="btn btn-teal" href="https://whop.com/checkout/plan_CIJj9Kkl3hail" target="_blank">Whop — Start Trial</a>
+        <a class="btn btn-secondary" href="https://buy.stripe.com/test_fZu6oHgBf1t98Z2aC6bjW02" target="_blank">Stripe Checkout</a>
+        <a class="btn btn-secondary" href="https://whop.com/checkout/plan_kUK7GVLUbruuB" target="_blank">Annual $1,430 (Whop)</a>
+      </div>
+      <div class="gateway">WHOP · STRIPE</div>
+    </div>
+    <div class="card">
+      <div class="tier">Sovereign</div>
+      <div class="price">$399<small>/mo</small></div>
+      <div class="billing">or $1,099 / quarter</div>
+      <ul class="features">
+        <li>Everything in Commander</li>
+        <li>Multi-account isolation</li>
+        <li>Private agent instances</li>
+        <li>Full REST + WebSocket API</li>
+        <li>Custom model fine-tuning</li>
+        <li>MiCA / KYT compliance packages</li>
+        <li>SLA-backed uptime</li>
+      </ul>
+      <div class="btns">
+        <a class="btn btn-purple" href="https://whop.com/checkout/plan_HkHxs4gdZdzRc" target="_blank">Whop — Get Access</a>
+        <a class="btn btn-secondary" href="https://buy.stripe.com/test_7sY28rgBf5Jp6QU8tYbjW03" target="_blank">Stripe Checkout</a>
+        <a class="btn btn-secondary" href="https://whop.com/checkout/plan_dEV42sLIlyrG7" target="_blank">Quarterly $1,099 (Whop)</a>
+      </div>
+      <div class="gateway">WHOP · STRIPE</div>
+    </div>
+  </div>
+  <p class="note">
+    Dashboard · Docs · Code<br><br>
+    Stripe links are currently in <b>test mode</b>. Activate live mode in Stripe Dashboard to accept real payments.
+  </p>
+</div>
+</body>
+</html>
